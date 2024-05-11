@@ -5,6 +5,7 @@
 _longjmp:
 longjmp:
 	// IHI0055B_aapcs64.pdf 5.1.1, 5.1.2 callee saved registers
+	bti jc
 	ldp x19, x20, [x0,#0]
 	ldp x21, x22, [x0,#16]
 	ldp x23, x24, [x0,#32]
